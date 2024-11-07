@@ -36,18 +36,20 @@ def make_and_show(c, max_iter):
                 image[y, x] = 0
     # Отображение изображения
     plt.imshow(image, cmap='inferno', extent=(re_min, re_max, im_min, im_max))
-    fig.savefig(f"{c}{max_iter}.png", dpi=dpi)
+    fig.savefig(f"julia_set{c}{max_iter}.png", dpi=dpi)
 
 
 
 make_and_show(complex(-0.7, 0.27015),256)
-# make_and_show(complex(0.5251993, 0.5251993),256)
-# make_and_show(complex(-0.8, 0.156), 300)
-# make_and_show(complex(0.285, 0.01), 200)
-# make_and_show(complex(0.45, -0.1428), 400)
-# make_and_show(complex(-0.70176, -0.3842), 500)
-# make_and_show(complex(-0.835, -0.2321), 300)
-# make_and_show(complex(0.285, 0.013), 250)
+
+make_and_show(complex(0.5251993, 0.5251993),256)
+make_and_show(complex(-0.8, 0.156), 300)
+make_and_show(complex(0.285, 0.01), 200)
+make_and_show(complex(0.45, -0.1428), 400)
+make_and_show(complex(-0.70176, -0.3842), 500)
+make_and_show(complex(-0.835, -0.2321), 300)
+make_and_show(complex(0.285, 0.013), 250)
+
 make_and_show(complex(-0.4, 0.6), 600)
 make_and_show(complex(-0.8, 0.156), 400)
 make_and_show(complex(0.355, 0.355), 350)
